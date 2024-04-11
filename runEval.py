@@ -9,13 +9,34 @@ headers = {
 }
 
 def dataLkhNoCluster(problem):
+    #Running Lkh without Clustering does not print the Value of the Solution (because Lkh does not do this)
+    #We do a work-wround for this, by applying k-means with k = 1, which does not cluster the problem, but prints the value
+
     #create Meta-Solver Strategy
-    solver = 'edu.kit.provideq.toolbox.vrp.solvers.LkhVrpSolver'
+    solver = 'edu.kit.provideq.toolbox.vrp.solvers.ClusterAndSolveVrpSolver'
+    clusterer = 'edu.kit.provideq.toolbox.vrp.clusterer.KmeansClusterer'
+    clusterSolver = 'edu.kit.provideq.toolbox.vrp.solvers.LkhVrpSolver'
 
     #create Data for API Request:
     data = {
         'requestContent': problem,
-        'requestedSolverId': solver
+        'requestedSolverId': solver,
+        'requestedSubSolveRequests': {
+            'clusterable-vrp': {
+                'requestedSolverId': clusterer,
+                'requestedMetaSolverSettings': [{
+                        "name": "kmeans-cluster-number",
+                        "title": "Number of Kmeans Cluster (default: 3)",
+                        "type": "INTEGER",
+                        "number": 1
+                    }],
+                'requestedSubSolveRequests': {
+                    'vrp': {
+                        'requestedSolverId':clusterSolver
+                    }
+                }
+            }
+        }
     }
     return data
 def dataLkhTwoPhase(problem):
@@ -120,7 +141,7 @@ for file in files_in_directory:
             f.write(file +  ', ')
 
         #Solve the Problem (Make the API Request)
-        data = dataLkhTwoPhase(problem)
+        data = dataLkhNoCluster(problem)
         response = requests.post(url, json=data, headers=headers)
         if response.status_code == 200:
             result = response.json()
