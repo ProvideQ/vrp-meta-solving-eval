@@ -131,7 +131,7 @@ with open(eval_file, 'w') as f:
 
 for file in files_in_directory:
     #TODO: Change to "*.txt"
-    if file.__contains__('p-n16-k8.txt'):
+    if file.__contains__('.txt'):
         with open(file) as f:
             problem = f.read()
         print(f"Starting to Solve Problem: " + file + "\n")
