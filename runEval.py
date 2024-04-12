@@ -141,7 +141,7 @@ for file in files_in_directory:
             f.write(file +  ', ')
 
         #Solve the Problem (Make the API Request)
-        data = dataLkhTwoPhase(problem)
+        data = dataQuboTspSolver(problem)
         response = requests.post(url, json=data, headers=headers)
         if response.status_code == 200:
             result = response.json()
@@ -154,10 +154,13 @@ for file in files_in_directory:
             #format solutionData so that it only includes the tour costs
             solutionData = str(result['solutionData'])
             parts = solutionData.split()
+            
+            value = -1
             for part in parts:
                 if '.' in part:
                     value = part
                     break
+            if (value == -1): value = 'No Solution'
 
             time = str(result['executionMilliseconds'])
             f.write(value +  ', ' + time + '\n')

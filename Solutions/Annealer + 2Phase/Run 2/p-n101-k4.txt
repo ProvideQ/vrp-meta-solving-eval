@@ -1,0 +1,9 @@
+{
+    "id": 2247,
+    "status": "SOLVED",
+    "metaData": "",
+    "solutionData": "NAME : P-n101-k4 solved with length 1810.6394343412867\nTYPE : TOUR\nDIMENSION : 101\nTOUR_SECTION\n88 45 61 96 14 95 97 7 15 43 99 39 85 60 86 98 101 38 94 17 62 1 100 93 6 92 -1\n28 89 53 32 84 18 83 49 29 47 9 70 91 37 31 64 20 11 87 19 46 90 12 8 48 54 2 1 63 71 -1\n23 24 76 5 13 42 56 77 26 25 59 44 16 3 58 74 75 27 69 68 78 81 57 55 40 73 22 41 1 -1\n72 65 50 82 10 66 51 1 33 21 36 4 35 67 52 34 79 80 30 -1\n-1\nEOF",
+    "debugData": null,
+    "solverName": "Clustering VRP Solver",
+    "executionMilliseconds": 1148520
+}

@@ -1,0 +1,9 @@
+{
+    "id": 3148,
+    "status": "INVALID",
+    "metaData": "",
+    "solutionData": null,
+    "debugData": "QUBO problem couldn't be solved:\nRestricted license - for non-production use only - expires 2025-11-24\nRead LP format model from file /Users/koalamitice/Desktop/toolbox-server/jobs/QUBO/1075/problem.lp\nReading time = 0.00 seconds\nobj: 0 rows, 26 columns, 0 nonzeros\nStop execution to prevent denial of service due to a large QUBO. Size of the QUBO as VRP (5)",
+    "solverName": "Clustering VRP Solver",
+    "executionMilliseconds": 1797
+}

@@ -1,0 +1,9 @@
+{
+    "id": 2840,
+    "status": "SOLVED",
+    "metaData": "",
+    "solutionData": "NAME : P-n22-k8 solved with length 721.1636311149672\nTYPE : TOUR\nDIMENSION : 22\nTOUR_SECTION\n1 20 -1\n1 18 22 -1\n1 19 21 -1\n1 15 17 -1\n1 14 12 9 -1\n11 13 16 1 -1\n5 4 7 1 -1\n8 10 1 -1\n1 6 3 -1\n2 1 -1\n-1\nEOF",
+    "debugData": null,
+    "solverName": "Clustering VRP Solver",
+    "executionMilliseconds": 11641
+}

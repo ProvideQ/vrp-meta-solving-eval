@@ -1,0 +1,24 @@
+p-n60-k15.txt, No Solution, 105224
+p-n16-k8.txt, 515.6265405410584, 178542
+p-n22-k8.txt, 723.3153719445269, 371523
+p-n70-k10.txt, No Solution, 1825
+p-n60-k10.txt, No Solution, 1813
+p-n101-k4.txt, No Solution, 1963
+p-n40-k5.txt, No Solution, 1820
+p-n76-k4.txt, No Solution, 1928
+p-n76-k5.txt, No Solution, 1866
+p-n21-k2.txt, No Solution, 1838
+p-n55-k15.txt, No Solution, 99033
+p-n19-k2.txt, No Solution, 1823
+p-n50-k7.txt, No Solution, 1814
+p-n55-k10.txt, No Solution, 1796
+results.txt, No Solution, 3
+p-n50-k8.txt, No Solution, 1819
+p-n50-k10.txt, No Solution, 1790
+p-n55-k7.txt, No Solution, 1815
+p-n51-k10.txt, No Solution, 1816
+p-n45-k5.txt, No Solution, 1810
+p-n23-k8.txt, No Solution, 247067
+p-n20-k2.txt, No Solution, 4474
+p-n65-k10.txt, No Solution, 1805
+p-n22-k2.txt, No Solution, 1822

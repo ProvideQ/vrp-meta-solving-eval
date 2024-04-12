@@ -1,0 +1,9 @@
+{
+    "id": 2653,
+    "status": "SOLVED",
+    "metaData": "",
+    "solutionData": "NAME : P-n60-k10 solved with length 962.4273118755887\nTYPE : TOUR\nDIMENSION : 60\nTOUR_SECTION\n1 57 42 43 23 44 2 24 -1\n22 48 29 31 49 1 -1\n17 4 18 7 34 1 52 -1\n33 1 45 50 25 19 51 -1\n3 1 5 30 46 28 -1\n37 6 38 21 16 58 60 1 -1\n13 59 40 41 27 1 -1\n8 1 35 47 53 9 36 -1\n10 11 32 26 56 1 -1\n14 55 20 54 15 1 -1\n12 39 1 -1\n-1\nEOF",
+    "debugData": null,
+    "solverName": "Clustering VRP Solver",
+    "executionMilliseconds": 50620
+}

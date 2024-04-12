@@ -1,0 +1,9 @@
+{
+    "id": 2043,
+    "status": "SOLVED",
+    "metaData": "",
+    "solutionData": "NAME : P-n40-k5 solved with length 672.3465040593561\nTYPE : TOUR\nDIMENSION : 40\nTOUR_SECTION\n1 13 18 19 5 20 16 38 14 -1\n28 7 25 24 8 26 15 1 -1\n31 10 35 6 1 39 11 34 40 -1\n21 3 23 2 1 30 17 33 12 -1\n27 9 32 29 1 36 22 4 37 -1\n-1\nEOF",
+    "debugData": null,
+    "solverName": "Clustering VRP Solver",
+    "executionMilliseconds": 51700
+}

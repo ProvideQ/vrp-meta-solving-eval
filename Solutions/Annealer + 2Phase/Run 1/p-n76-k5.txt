@@ -1,0 +1,9 @@
+{
+    "id": 2054,
+    "status": "SOLVED",
+    "metaData": "",
+    "solutionData": "NAME : P-n76-k5 solved with length 1251.966782402174\nTYPE : TOUR\nDIMENSION : 76\nTOUR_SECTION\n34 2 42 24 1 17 63 29 74 23 65 57 44 3 64 43 -1\n48 58 6 75 16 61 71 1 30 21 38 37 70 62 49 31 46 72 22 -1\n4 50 19 10 13 33 73 40 18 25 52 45 41 1 51 26 -1\n5 53 14 36 20 8 7 35 47 9 69 28 76 1 68 27 -1\n32 59 15 54 12 66 11 56 55 60 67 39 1 -1\n-1\nEOF",
+    "debugData": null,
+    "solverName": "Clustering VRP Solver",
+    "executionMilliseconds": 313046
+}
