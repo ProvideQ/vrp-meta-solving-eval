@@ -1,0 +1,9 @@
+{
+    "id": 1143,
+    "status": "SOLVED",
+    "metaData": "",
+    "solutionData": "NAME : P-n55-k15 solved with length 1062.0591554024404\nTYPE : TOUR\nDIMENSION : 55\nTOUR_SECTION\n1 2 44 42 43 -1\n1 3 29 23 -1\n1 4 25 50 24 17 -1\n1 7 34 52 -1\n1 22 48 49 -1\n1 31 30 46 -1\n1 33 45 -1\n1 6 38 21 37 -1\n1 13 41 18 -1\n1 26 19 51 -1\n1 5 35 -1\n1 27 8 47 -1\n1 10 40 -1\n1 9 14 28 53 -1\n1 16 55 20 36 -1\n1 11 39 -1\n1 15 54 -1\n1 12 32 -1\n-1\nEOF",
+    "debugData": null,
+    "solverName": "Clustering VRP Solver",
+    "executionMilliseconds": 2370
+}

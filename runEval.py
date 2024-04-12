@@ -141,7 +141,7 @@ for file in files_in_directory:
             f.write(file +  ', ')
 
         #Solve the Problem (Make the API Request)
-        data = dataLkhNoCluster(problem)
+        data = dataLkhTwoPhase(problem)
         response = requests.post(url, json=data, headers=headers)
         if response.status_code == 200:
             result = response.json()
