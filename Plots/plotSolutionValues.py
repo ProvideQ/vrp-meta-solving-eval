@@ -113,7 +113,7 @@ alpha_value = 0.4
 #Optimum:
 plt.plot(df['Optimums'], label='Optimal Solution', linestyle='--', marker='.', color = 'black')
 #LKH-3
-plt.scatter(df.index, df['LKH-3'], label='LKH-3', color='red', marker = '>')
+plt.scatter(df.index, df['LKH-3'], label='LKH-3', color='red', marker = 'o')
 #LKH-3 + Clustering
 plt.scatter(df.index, df['LKH-3 + 2 Phase 1'], label='LKH-3 + 2 Phase Clustering', color='orange', alpha=alpha_value, marker = '<')
 plt.scatter(df.index, df['LKH-3 + 2 Phase 2'], color='orange', alpha=alpha_value, marker = '<')
