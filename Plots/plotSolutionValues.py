@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import seaborn as sns
 
 # Provided numbers
 lkh3 = [
@@ -135,11 +136,13 @@ plt.scatter(5, qaoa[1], color = 'darkgreen', s=90, marker = '^', alpha=alpha_val
 plt.xlabel('Problems')
 plt.ylabel('Value of the Solution')
 plt.title('Values of the Vehicle Routing Problem Solutions')
+plt.xticks(range(len(problems)), problems, rotation = 45, fontsize = 5)
 
-plt.xticks(range(len(problems)), problems, rotation = 90)
+plt.subplots_adjust(bottom=0.15)
 
 # Add legend
 plt.legend()
 
-# Show plot
-plt.show()
+# plt.show()
+plt.savefig('Plots/values.pdf', format='pdf')
+plt.close()

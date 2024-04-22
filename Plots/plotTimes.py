@@ -395,33 +395,37 @@ plt.scatter(df.index, df['LKH-3 + 2 Phase 3'], color='orange', alpha=alpha_value
 plt.scatter(df.index, df['LKH-3 + 2 Phase 4'], color='orange', alpha=alpha_value, marker = '.')
 plt.scatter(df.index, df['LKH-3 + 2 Phase 5'], color='orange', alpha=alpha_value, marker = '.')
 #Annealer:
-#plt.scatter(df.index, df['Annealer1'], label='Annealer + 2 Phase Clustering', color='blue', alpha=alpha_value, marker = '.')
-#plt.scatter(df.index, df['Annealer2'], color='blue', alpha=alpha_value, marker = '.')
-#plt.scatter(df.index, df['Annealer3'], color='blue', alpha=alpha_value, marker = '.')
-#plt.scatter(df.index, df['Annealer4'], color='blue', alpha=alpha_value, marker = '.')
-#plt.scatter(df.index, df['Annealer5'], color='blue', alpha=alpha_value, marker = '.')
-#plt.scatter(df.index, df['Annealer5'], color='blue', alpha=alpha_value, marker = '.')
+plt.scatter(df.index, df['Annealer1'], label='Annealer + 2 Phase Clustering', color='blue', alpha=alpha_value, marker = '.')
+plt.scatter(df.index, df['Annealer2'], color='blue', alpha=alpha_value, marker = '.')
+plt.scatter(df.index, df['Annealer3'], color='blue', alpha=alpha_value, marker = '.')
+plt.scatter(df.index, df['Annealer4'], color='blue', alpha=alpha_value, marker = '.')
+plt.scatter(df.index, df['Annealer5'], color='blue', alpha=alpha_value, marker = '.')
+plt.scatter(df.index, df['Annealer5'], color='blue', alpha=alpha_value, marker = '.')
 #QAOA:
-#plt.scatter(0, qaoa1[0], label = 'QAOA + 2 Phase Clustering', color = 'darkgreen', marker = '.', alpha=alpha_value)
-#plt.scatter(5, qaoa1[1], color = 'darkgreen', marker = '.', alpha=alpha_value)
-#plt.scatter(0, qaoa2[0], color = 'darkgreen', marker = '.', alpha=alpha_value)
-#plt.scatter(5, qaoa2[1], color = 'darkgreen', marker = '.', alpha=alpha_value)
-#plt.scatter(0, qaoa3[0], color = 'darkgreen', marker = '.', alpha=alpha_value)
-#plt.scatter(5, qaoa3[1], color = 'darkgreen', marker = '.', alpha=alpha_value)
-#plt.scatter(0, qaoa4[0], color = 'darkgreen', marker = '.', alpha=alpha_value)
-#plt.scatter(5, qaoa4[1], color = 'darkgreen', marker = '.', alpha=alpha_value)
-#plt.scatter(0, qaoa5[0], color = 'darkgreen', marker = '.', alpha=alpha_value)
-#plt.scatter(5, qaoa5[1], color = 'darkgreen', marker = '.', alpha=alpha_value)
+plt.scatter(0, qaoa1[0], label = 'QAOA + 2 Phase Clustering', color = 'darkgreen', marker = '.', alpha=alpha_value)
+plt.scatter(5, qaoa1[1], color = 'darkgreen', marker = '.', alpha=alpha_value)
+plt.scatter(0, qaoa2[0], color = 'darkgreen', marker = '.', alpha=alpha_value)
+plt.scatter(5, qaoa2[1], color = 'darkgreen', marker = '.', alpha=alpha_value)
+plt.scatter(0, qaoa3[0], color = 'darkgreen', marker = '.', alpha=alpha_value)
+plt.scatter(5, qaoa3[1], color = 'darkgreen', marker = '.', alpha=alpha_value)
+plt.scatter(0, qaoa4[0], color = 'darkgreen', marker = '.', alpha=alpha_value)
+plt.scatter(5, qaoa4[1], color = 'darkgreen', marker = '.', alpha=alpha_value)
+plt.scatter(0, qaoa5[0], color = 'darkgreen', marker = '.', alpha=alpha_value)
+plt.scatter(5, qaoa5[1], color = 'darkgreen', marker = '.', alpha=alpha_value)
 
 # Add labels and title
 plt.xlabel('Problems')
 plt.ylabel('Time in Milliseconds')
+plt.yscale('log')
 plt.title('Time Needed to Compute the Solution')
 
-plt.xticks(range(len(problems)), problems, rotation = 90)
+plt.xticks(range(len(problems)), problems, rotation = 45, fontsize = 5)
+
+plt.subplots_adjust(bottom=0.15)
 
 # Add legend
 plt.legend()
 
-# Show plot
-plt.show()
+# plt.show()
+plt.savefig('Plots/times.pdf', format='pdf')
+plt.close()
