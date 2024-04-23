@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import matplotlib.ticker as ticker
 
 # Numbers
 lkh31 = [4386,
@@ -415,11 +416,14 @@ plt.scatter(5, qaoa5[1], color = 'darkgreen', marker = '.', alpha=alpha_value)
 
 # Add labels and title
 plt.xlabel('Problems')
-plt.ylabel('Time in Milliseconds')
+plt.ylabel('Time in Seconds')
 plt.yscale('log')
 plt.title('Time Needed to Compute the Solution')
 
 plt.xticks(range(len(problems)), problems, rotation = 45, fontsize = 5)
+
+formatter = ticker.FuncFormatter(lambda x, pos: '{:.0f}'.format(x / 1000))
+plt.gca().yaxis.set_major_formatter(formatter)
 
 plt.subplots_adjust(bottom=0.15)
 
