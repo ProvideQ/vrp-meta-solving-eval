@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Domenik"
+  given-names: "Eichhorn"
+- family-names: "Schweikart"
+  given-names: "Maximilian"
+- family-names: "Poser"
+  given-names: "Nick"
+- family-names: "Poggel"
+  given-names: "Benedikt"
+- family-names: "Lorenz"
+  given-names: "Jeanette Miriam"
+title: "Hybrid Meta-Solving for Practical Quantum Computing"
+doi: 10.1109/QCE60285.2024.00056
+date-released: 2025-01-10
+url: "https://ieeexplore.ieee.org/abstract/document/10821252"
